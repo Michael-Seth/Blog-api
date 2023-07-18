@@ -1,0 +1,24 @@
+STEPS
+1. Initialize your npm project
+    npm init
+
+2. Delete Package-lock.json
+
+3. Create the following folders
+    - config - This contains configurations for the application (Connecting to Mongodb and other stuffs)
+    - controllers - This is to contain our business logic
+    - middlewares - This is to help us enhance our business logic (authentications and other stuffs)
+    model 
+    - routes - For routing in the application
+    - utils - Other utility functions such as generating and verifying tokens
+
+4. Install Express js to create your server, check the server.js file to see how to create a server
+
+5. Install Nodemon to help to reload your server (Check package.json for reference)
+
+6. Go to MongoDB to create your online database and connect your application to init
+ - Create a file named dbConnect in your Config Folder
+ - Connect your mongodb in the dbConnect file and call it in your server.js
+
+7. Start working on your models, create a submodel folder in your model (by convention the folder names are in uppercase). Models are like classes where you create intances
+ - Create your schema in the model file
